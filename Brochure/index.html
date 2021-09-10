@@ -16,33 +16,59 @@
 <body>
     <div class="container-fluid" style="height: 100vh;">
         <nav class="row bg-dark h-auto">
-            <span class="text-light"
-                style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 2em;">MenuTIC</span>
+            <span class="text-light" id="title">MenuTIC</span>
         </nav>
-        <ul>
-        </ul>
-        <div class="row d-flex justify-content-between">
-            <a id="caja1" class="d-flex row col-5 btn align-content-center" href="problematica.html">
-                <span id="text" class="text-white mr-auto">Problemática</span>
-            </a>
-            <a id="caja3" class="d-flex row col-5 btn align-content-center" href="objetivos.html">
-                <span id="text" class="text-white mr-auto">Objetvos</span>
-            </a>
-        </div>
         <ul></ul>
-        <div class="row d-flex justify-content-around">
-            <a id="caja" class="d-flex row col-5 btn align-content-center" href="alcance.html">
-                <span id="text" class="text-white mr-auto">Alcance</span>
-            </a>
-            <a id="caja4" class="d-flex row col-5 btn align-content-center" href="Prototipo.html">
-                <span id="text" class="text-white mr-auto">Prototipo sucio</span>
-            </a>
+        <div class="row-fluid text-center">
+            <span id="text" class="text-dark text-center">¡Bienvenido a MenuTIC!</span>
         </div>
         <hr class="mb-5 mt-5">
+        <div class="row d-flex">
+            <span id="title" style="font-size: 3em;">Nosotros</span>
+        </div>
+        <ul></ul>
+        <div>
+            <span id="text" class="text-dark">
+                Conoce sobre nuestro proyecto MenuTIC!
+            </span>
+        </div>
+        <hr>
+        <div id="nosotros" class="row-fluid d-flex justify-content-between">
+            <a id="caja1" class="caja d-flex row col-lg-6 col-md-6 col-xs-12 btn align-content-center"
+                href="problematica.html">
+                <span id="text" class=" mr-auto">Problemática</span>
+            </a>
+            <a id="caja3"
+                class="text caja d-flex row col-lg-6 col-md-6 col-xs-12 btn align-content-center justify-content-center"
+                href="objetivos.html">
+                <span id="text" class=" mr-auto">Objetivos</span></a>
+        </div>
+        <ul></ul>
+        <div class="row-fluid d-flex justify-content-between">
+            <a id="caja" class="caja d-flex row col-lg-6 col-md-6 col-xs-12 btn align-content-center"
+                href="alcance.html">
+                <span id="text" class=" mr-auto">Alcance</span>
+            </a>
+            <a id="caja4" class="caja d-flex row col-lg-6 col-md-6 col-xs-12 btn align-content-center"
+                href="Prototipo.html">
+                <span id="text" class=" mr-auto">Prototipo sucio</span>
+            </a>
+        </div>
+        <ul class="mb-5"></ul>
+        <div class="d-flex justify-content-center">
+            <span id="text" class="text-dark">¡Conoce nuestro logo!</span>
+        </div>
+        <hr class="mb-5">
         <div class="img-fluid d-flex justify-content-center">
             <img src="LOGO MENUTIC.png" alt="">
         </div>
+        <footer>
+            <div class="row bg-dark">
+                <span id="title" class="text-white text-center">MenuTIC | 2021</span>
+            </div>
+        </footer>
     </div>
+    <!--STYLE-->
     <style>
         #caja {
             height: 20em;
@@ -85,7 +111,24 @@
         }
 
         #text {
-            font-size: 3em;
+            font-size: 2em;
+            color: white;
+        }
+
+        #title {
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 2em;
+            text-decoration: none;
+        }
+
+        .caja:hover {
+            transition: 0.3s;
+            background-color: black !important;
+            color: black !important;
+        }
+
+        .id:hover {
+            color: black;
         }
     </style>
     <!-- Bootstrap core JavaScript-->
